@@ -121,3 +121,56 @@ html {
         opacity: 1;
     }
 }
+
+.sidebar {
+    width: 40rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+}
+
+.menu {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-item {
+    text-align: center;
+}
+
+.menu-link {
+    font-family: 'Baloo Da 2', serif;
+    font-size: 4rem;
+    color: #555;   
+}
+
+.social-medi {
+    position: absolute;
+    bottom: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.social-medi i {
+    font-size: 2.2rem;
+    margin: 3rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: #777;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color .3s;
+}
+
+.social-medi i:hover {
+    background-color: teal;
+}
+
