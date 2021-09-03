@@ -145,10 +145,27 @@ html {
 .menu-link {
     font-family: 'Baloo Da 2', serif;
     font-size: 4rem;
-    color: #555;   
+    color: #555; 
+    position: relative;  
 }
 
-.social-medi {
+.menu-item::before {
+    content: attr(data-content);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: teal;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width .3s ease-in-out;
+}
+
+.menu-item:hover::before {
+    width: 100%;
+}
+
+.social-m {
     position: absolute;
     bottom: 3rem;
     width: 100%;
@@ -156,7 +173,7 @@ html {
     justify-content: center;
 }
 
-.social-medi i {
+.social-m i {
     font-size: 2.2rem;
     margin: 3rem;
     width: 4.5rem;
@@ -170,7 +187,7 @@ html {
     transition: background-color .3s;
 }
 
-.social-medi i:hover {
+.social-m i:hover {
     background-color: teal;
 }
 
