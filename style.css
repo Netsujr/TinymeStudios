@@ -44,8 +44,7 @@ html {
 }
 
 .change .line-1 {
-    transform: rotate(45deg);
-    translate: (0.3rem, 0.8rem);
+    transform: rotate(45deg) translate(0.3rem, 0.8rem);
 }
 
 .change .line-2 {
@@ -54,8 +53,7 @@ html {
 }
 
 .change .line-3 {
-    transform: rotate(-45deg);
-    translate: (0.3rem, -0.8rem);
+    transform: rotate(-45deg) translate(0.3rem, -0.8rem);
 }
 
 .hamburger-menu span {
