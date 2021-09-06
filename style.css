@@ -11,6 +11,10 @@ html {
     font-size: 62.5%;
 }
 
+.display .container {
+    display: block;
+}
+
 .hamburger-menu {
     width: 3rem;
     height: 3rem;
@@ -22,6 +26,10 @@ html {
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer ;
+    transition: right 0.7s;
+}
+.change .hamburger-menu {
+    right: 33rem;
 }
 
 .line {
