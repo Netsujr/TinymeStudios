@@ -25,8 +25,8 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    cursor: pointer ;
-    transition: right 0.7s;
+    cursor: pointer;
+    transition: right .7s;
 }
 .change .hamburger-menu {
     right: 33rem;
@@ -91,7 +91,6 @@ html {
     top: 50%;
     left: -2rem;
     transform: translateY(-50%);
- 
 }
 
 .header {
