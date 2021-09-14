@@ -484,7 +484,7 @@ html {
 
 .contact-wrapper {
     width: 60%;
-    height: 75rem;
+    height: 60rem;
     display: flex;
     box-shadow: 0 3rem 7rem rgba(0, 0, 0, 0.5);
 }
@@ -501,6 +501,14 @@ html {
     padding: 3rem 10rem 10rem 10rem;
 }
 
+.contact-heading {
+    font-family: "Baloo Da 2", serif;
+    font-size: 6rem;
+    font-weight: 300;
+    color: #272727;
+    margin-bottom: 5rem;
+    text-align: center;
+  }
 
 
 
