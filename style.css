@@ -510,6 +510,48 @@ html {
     text-align: center;
   }
 
+  .contact-right form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .input-group {
+      position: relative;
+  }
+
+  .field {
+      width: 45rem;
+      background-color: transparent;
+      border: none;
+      border-bottom: .2rem dashed #636363;
+      margin: 3rem 0;
+      padding: 1rem 1rem 1rem 0;
+      font-family: 'Muli', serif;
+      font-size: 1.6rem;
+      color: #4b4b4b; 
+  }
+
+  .input-group input {
+      height: 4rem;
+  }
+
+  .input-group textarea {
+     max-height: 7rem;
+     max-width: 45rem; 
+  }
+
+  .input-group label {
+      position: absolute;
+      left: 0;
+      font-family: 'Baloo Da 2', serif;
+      font-size: 1.8rem;
+      color: #4b4b4b;
+      text-transform: uppercase;
+      pointer-events: none;
+  }
+
 
 
 
