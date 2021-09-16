@@ -972,3 +972,52 @@ visibility: hidden;
       height: 18rem;
     }
   }
+
+  .calendar-container {
+      width: 100%;
+      height: 100%;
+      background-color: gray;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .calendar {
+      width: 45rem;
+      height: 52rem;
+      background-color: #222227;
+      box-shadow: 0.5rem 3rem rgba(0, 0, 0, 0.4);
+  }
+
+  .month {
+      width: 100%;
+      height: 12rem;
+      background-color: #167e56;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2rem;
+      text-align: center;
+      text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  }
+
+  .month {
+      font-size: 2.5rem;
+      cursor: pointer;
+  }
+
+  .month h1 {
+      font-size: 3rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      margin-bottom: 1rem;
+  }
+
+  .month p {
+      font-size: 1.6rem;
+  }
+
+  
+
