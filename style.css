@@ -709,7 +709,144 @@ html {
 }
 
 @media (max-width: 1300px) {
+    .team {
+        padding-bottom: 5rem;
+}
+    .cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+    }
 
+    .card {
+        margin-bottom: 8rem;
+    }
+
+    .contact-wrapper {
+        width: 90%;
+        height: 55rem;
+    }
+
+    .contact-heading {
+        margin-bottom: 2rem;
+    }
+
+    .field {
+        margin: 2rem 0;
+    }
 }
 
+@media (max-width: 1000px) {
+    .banner h1 {
+      font-size: 5rem;
+      line-height: 6rem;
+    }
+  
+    .banner p {
+      font-size: 2.5rem;
+    }
+  
+    .banner button {
+      width: 18rem;
+      height: 4rem;
+      font-size: 1.5rem;
+    }
+  
+    .services {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service {
+      width: 40rem;
+      margin-bottom: 6rem;
+    }
+  
+    .about-us-img-wrapper {
+      width: 40rem;
+    }
+  
+    .about-us-img-wrapper img {
+      width: 100%;
+    }
+  
+    .contact-left {
+      width: 0;
+    }
+  
+    .contact-right {
+      width: 100%;
+    }
+  
+    .field {
+      width: 55rem;
+    }
+  
+    .input-group textarea {
+      max-width: 55rem;
+    }
+  
+    .submit-btn {
+      width: 55rem;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 50%;
+    }
+  
+    .copyright {
+      order: 1;
+      margin-top: 3rem;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .banner h1 {
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+  
+    .banner p {
+      font-size: 2rem;
+    }
+  
+    .field {
+      width: 35rem;
+    }
+  
+    .input-group textarea {
+      max-width: 35rem;
+    }
+  
+    .submit-btn {
+      width: 35rem;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    html {
+      font-size: 45%;
+    }
+  
+    .sidebar {
+      width: 100%;
+      right: -100%;
+    }
+  
+    .change .hamburger-menu {
+      right: 38rem;
+    }
+  
+    .service {
+      width: 30rem;
+    }
+  
+    .footer {
+      height: 18rem;
+    }
+  }
 
