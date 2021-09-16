@@ -835,12 +835,6 @@ visibility: hidden;
       padding-bottom: 5rem;
     }
   
-    .cards-wrapper { 
-      flex-direction: column;
-      align-items: center;
-      margin-top: 4rem;
-    }
-  
     .card {
       margin-bottom: 8rem;
     }
@@ -864,6 +858,12 @@ visibility: hidden;
       font-size: 5rem;
       line-height: 6rem;
     }
+
+    .cards-wrapper { 
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+      }
   
     .banner p {
       font-size: 2.5rem;
@@ -932,6 +932,7 @@ visibility: hidden;
       font-size: 4rem;
       line-height: 5rem;
     }
+
   
     .banner p {
       font-size: 2rem;
