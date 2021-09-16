@@ -31,8 +31,8 @@ html {
 }
 
 .circles div {
-    animation: circles 1.2s cubic-bezier(.5, 0, .5, 1) infinite;
-    transform-origin: 4rem 4rem;
+    animation: circles 1.2s cubic-bezier(1, 1, 0.5, 1) infinite;
+    transform-origin: .1rem .1rem;
 }
 
 .circles div::after {
