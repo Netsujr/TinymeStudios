@@ -639,3 +639,77 @@ html {
     border-radius: 0.3rem;
 }
 
+@media (max-width: 1500px) {
+    .about-us-img-wrapper {
+        grid-row: 3/-1;
+    }
+
+    .card {
+        width: 34rem;
+    }
+
+    .contact-wrapper {
+        width: 80%;
+        height: 65rem;
+    }
+
+    .footer-content {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .banner h1 {
+        font-size: 6rem;
+        line-height: 7rem;
+    }
+
+    .banner p {
+        font-size: 3rem;
+    }
+
+    .banner button {
+        width: 20rem;
+        height: 5rem;
+        font-size: 1.6rem;
+    }
+
+    .menu-link {
+        font-size: 3rem;
+    }
+
+    .service:nth-child(1) {
+        grid-column: 3/7;
+    }
+    
+    .service:nth-child(2) {
+        grid-column: 2 / 6;
+    
+    }
+      
+    .service:nth-child(3) {
+        grid-column: 3 / 7;
+        
+    }
+      
+    .service:nth-child(4) {
+        grid-column: 11 / 15;
+    
+    }
+      
+    .service:nth-child(5) {
+        grid-column: 12 / 16;
+    
+    }
+      
+    .service:nth-child(6) {
+        grid-column: 11 / 15;
+        
+    }
+}
+
+@media (max-width: 1300px) {
+
+}
+
+
