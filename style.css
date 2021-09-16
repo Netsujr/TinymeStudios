@@ -11,6 +11,137 @@ html {
     font-size: 62.5%;
 }
 
+
+.spinner-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+    z-index: 300;
+}
+
+.display .spinner-container {
+opacity: 0;
+visibility: hidden;
+}
+
+.circles {
+    width: 8rem;
+    height: 8rem;
+    position: relative;
+}
+
+.circles div {
+    animation: circles 1.2s cubic-bezier(1, 1, 0.5, 1) infinite;
+    transform-origin: .1rem .1rem;
+}
+
+.circles div::after {
+    content: "";
+    position: absolute;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background-color: teal;
+    margin: -4rem 0 0 -4rem;
+}
+
+.circles div:nth-child(1) {
+    animation-delay: -0.036s;
+  }
+  
+  .circles div:nth-child(1)::after {
+    top: 6.3rem;
+    left: 6.3rem;
+  }
+  
+  .circles div:nth-child(2) {
+    animation-delay: -0.072s;
+  }
+  
+  .circles div:nth-child(2)::after {
+    top: 6.8rem;
+    left: 5.6rem;
+  }
+  
+  .circles div:nth-child(3) {
+    animation-delay: -0.108s;
+  }
+  
+  .circles div:nth-child(3)::after {
+    top: 7.1rem;
+    left: 4.8rem;
+  }
+  
+  .circles div:nth-child(4) {
+    animation-delay: -0.144s;
+  }
+  
+  .circles div:nth-child(4)::after {
+    top: 7.2rem;
+    left: 4rem;
+  }
+  
+  .circles div:nth-child(5) {
+    animation-delay: -0.18s;
+  }
+  
+  .circles div:nth-child(5)::after {
+    top: 7.1rem;
+    left: 3.2rem;
+  }
+  
+  .circles div:nth-child(6) {
+    animation-delay: -0.216s;
+  }
+  
+  .circles div:nth-child(6)::after {
+    top: 6.8rem;
+    left: 2.4rem;
+  }
+  
+  .circles div:nth-child(7) {
+    animation-delay: -0.252s;
+  }
+  
+  .circles div:nth-child(7)::after {
+    top: 6.3rem;
+    left: 1.7rem;
+  }
+  
+  .circles div:nth-child(8) {
+    animation-delay: -0.288s;
+  }
+  
+  .circles div:nth-child(8)::after {
+    top: 5.6rem;
+    left: 1.2rem;
+  }
+
+  @keyframes circles {
+      0% {
+          transform: rotate(0);
+      }
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+
+
+.container {
+    display: none;
+}
+
+.display .container {
+    display: block;
+}
+
 .hamburger-menu {
     width: 3rem;
     height: 3rem;
@@ -21,13 +152,17 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    cursor: pointer ;
+    cursor: pointer;
+    transition: right .7s;
+}
+.change .hamburger-menu {
+    right: 33rem;
 }
 
 .line {
     width: 100%;
     height: 0.2rem;
-    background-color: white;
+    background-color: teal;
     box-shadow: 0.1 .2rem rgba(0, 0, 0, 0.2);
 }
 
@@ -36,8 +171,7 @@ html {
 }
 
 .change .line-1 {
-    transform: rotate(45deg);
-    translate: (0.3rem, 0.8rem);
+    transform: rotate(45deg) translate(0.3rem, 0.8rem);
 }
 
 .change .line-2 {
@@ -46,8 +180,7 @@ html {
 }
 
 .change .line-3 {
-    transform: rotate(-45deg);
-    translate: (0.3rem, -0.8rem);
+    transform: rotate(-45deg) translate(0.3rem, -0.8rem);
 }
 
 .hamburger-menu span {
@@ -83,7 +216,6 @@ html {
     top: 50%;
     left: -2rem;
     transform: translateY(-50%);
- 
 }
 
 .header {
@@ -280,12 +412,17 @@ html {
 }
 
 .services {
-width: 100%;
-height: 100%;
-display: grid;
-grid-template-columns: repeat(16, 1fr);
-grid-template-rows: repeat(6, 6rem);
-grid-row-gap: 4rem;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(6, 6rem);
+    grid-row-gap: 4rem;
+}
+
+.service {
+    width: 100%;
+    margin-bottom: 2rem;
 }
 
 .service {
@@ -329,9 +466,29 @@ grid-row-gap: 4rem;
     margin-bottom: 1rem;
 }
 
+.service-header i {
+    font-size: 4rem;
+    color: #4b4b4b;
+    margin-right: 2rem;
+}
+
+.service-header h3 {
+    font-family: 'Baloo Da 2', serif;
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.service-text {
+    font-size: 1.6rem;
+    font-family: "Josefin Slab";
+    text-align: justify;
+}
+
 .about-us-img-wrapper {
     grid-column: 7/11;
-    grid-row: 2/6;
+    grid-row: 3/6;
     width: 100%;
 }
 
@@ -341,3 +498,477 @@ grid-row-gap: 4rem;
     opacity: 0.9;
 }
 
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem 10rem 5rem;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 8rem;
+    width: 120%;
+}
+
+.card {
+    width: 30rem;
+    height: 35rem;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.card-img-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    border-radius: 0.5rem;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .8;
+    border-radius: 0.5rem;
+    transition: opacity 0.3s;
+}
+
+.card:hover .card-img-wrapper img {
+    opacity: 0.2;
+}
+
+.card-info {
+    position: absolute; 
+    bottom: 2rem;
+    padding: 2rem;
+    text-shadow: .1rem .1rem rgb(0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s;
+}
+
+.card:hover .card-info {
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-info h2 {
+    font-family: 'Baloo Da 2', serif;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+    color: #eee;
+}
+
+.card-info h3 {
+    font-family: 'Muli', serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: teal;
+    margin-bottom: 1rem;
+}
+
+.card-info p {
+    font-family: 'Baloo Da 2', serif;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 300;
+    color: #eee;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.card-info button {
+    width: 10rem;
+    height: 3rem;
+    background-color: teal;
+    border: none;
+    font-family: 'Baloo da 2';
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    color: #eee;
+    border-radius: .3rem;
+    box-shadow: 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
+}
+
+.card-info button:hover {
+    cursor: pointer;
+}
+
+.contact {
+    width: 100%;
+    height: 100vh;
+    background-color: #272727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-wrapper {
+    width: 60%;
+    height: 60rem;
+    display: flex;
+    box-shadow: 0 3rem 7rem rgba(0, 0, 0, 0.5);
+}
+
+.contact-left {
+    width: 35%;
+    background: linear-gradient(rgba(15, 15, 15, .6), rgba(22, 22, 22, .9));
+    background-size: cover;
+}
+
+.contact-right {
+    width: 65%;
+    background-color: #eee;
+    padding: 3rem 10rem 10rem 10rem;
+}
+
+.contact-heading {
+    font-family: "Baloo Da 2", serif;
+    font-size: 6rem;
+    font-weight: 300;
+    color: #272727;
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+
+  .contact-right form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .input-group {
+      position: relative;
+  }
+
+  .field {
+      width: 45rem;
+      background-color: transparent;
+      border: none;
+      border-bottom: .2rem dashed #636363;
+      margin: 3rem 0;
+      padding: 1rem 1rem 1rem 0;
+      font-family: 'Muli', serif;
+      font-size: 1.6rem;
+      color: #4b4b4b; 
+  }
+
+  .input-group input {
+      height: 4rem;
+  }
+
+  .input-group textarea {
+     max-height: 7rem;
+     max-width: 45rem; 
+  }
+
+  .field:focus {
+      border-bottom-style: solid;
+  }
+
+  .input-group label {
+      position: absolute;
+      left: 0;
+      font-family: 'Baloo Da 2', serif;
+      font-size: 1.8rem;
+      color: #4b4b4b;
+      text-transform: uppercase;
+      pointer-events: none;
+      transition: all 0.3s;
+  }
+
+.input-label {
+    bottom: 3rem;
+}
+
+.message {
+    bottom: 6rem;
+}
+
+.field:focus ~ label {
+    transform: translateY(-3rem);
+    font-size: 1.5rem;
+}
+
+.submit-btn {
+    width: 45rem;
+    height: 5rem;
+    background-color: teal;
+    color: white;
+    border: none;
+    margin-top: 2rem;
+    font-family: 'Muli', serif;
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    cursor: pointer;
+    text-shadow: 0.1rem .2rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0.1rem .3rem rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+    width: 100%;
+    height: 15rem;
+    background-color: #17181b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    font-family: 'Baloo Da 2', serif;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.social-list a {
+    margin: 2rem;
+}
+
+.social-list i:hover {
+    cursor: pointer;
+    color: teal;
+}
+
+.social-list i {
+    font-size: 2rem;
+    color: white;
+}
+
+
+.scroll-btn {
+    position: fixed;
+    right: 4rem;
+    bottom: 5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.2);
+    border-radius: 20%;
+}
+
+@media (max-width: 1500px) {
+    .about-us-img-wrapper {
+      grid-row: 3 / -1;
+    }
+  
+    .card {
+      width: 34rem;
+    }
+  
+    .contact-wrapper {
+      width: 80%;
+      height: 65rem;
+    }
+  
+    .footer-content {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 1400px) {
+    .banner h1 {
+      font-size: 6rem;
+      line-height: 7rem;
+    }
+  
+    .banner p {
+      font-size: 3rem;
+    }
+  
+    .banner button {
+      width: 20rem;
+      height: 5rem;
+      font-size: 1.6rem;
+    }
+  
+    .menu-link {
+      font-size: 3rem;
+    }
+  
+    .service:nth-child(1) {
+      grid-column: 3 / 7;
+    }
+  
+    .service:nth-child(2) {
+      grid-column: 2 / 6;
+    }
+  
+    .service:nth-child(3) {
+      grid-column: 3 / 7;
+    }
+  
+    .service:nth-child(4) {
+      grid-column: 11 / 15;
+    }
+  
+    .service:nth-child(5) {
+      grid-column: 12 / 16;
+    }
+  
+    .service:nth-child(6) {
+      grid-column: 11 / 15;
+    }
+  }
+  
+  @media (max-width: 1300px) {
+    .team {
+      padding-bottom: 5rem;
+    }
+  
+    .card {
+      margin-bottom: 8rem;
+    }
+  
+    .contact-wrapper {
+      width: 90%;
+      height: 55rem;
+    }
+  
+    .contact-heading {
+      margin-bottom: 2rem;
+    }
+  
+    .field {
+      margin: 2rem 0;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .banner h1 {
+      font-size: 5rem;
+      line-height: 6rem;
+    }
+
+    .cards-wrapper { 
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+      }
+  
+    .banner p {
+      font-size: 2.5rem;
+    }
+  
+    .banner button {
+      width: 18rem;
+      height: 4rem;
+      font-size: 1.5rem;
+    }
+  
+    .services {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service {
+      width: 40rem;
+      margin-bottom: 6rem;
+    }
+  
+    .about-us-img-wrapper {
+      width: 40rem;
+    }
+  
+    .about-us-img-wrapper img {
+      width: 100%;
+    }
+  
+    .contact-left {
+      width: 0;
+    }
+  
+    .contact-right {
+      width: 100%;
+    }
+  
+    .field {
+      width: 55rem;
+    }
+  
+    .input-group textarea {
+      max-width: 55rem;
+    }
+  
+    .submit-btn {
+      width: 55rem;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 50%;
+    }
+  
+    .copyright {
+      order: 1;
+      margin-top: 3rem;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .banner h1 {
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+
+    .banner p {
+      font-size: 2rem;
+    }
+  
+    .field {
+      width: 35rem;
+    }
+  
+    .input-group textarea {
+      max-width: 35rem;
+    }
+  
+    .submit-btn {
+      width: 35rem;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    html {
+      font-size: 45%;
+    }
+  
+    .sidebar {
+      width: 100%;
+      right: -100%;
+    }
+  
+    .change .hamburger-menu {
+      right: 38rem;
+    }
+  
+    .service {
+      width: 30rem;
+    }
+  
+    .footer {
+      height: 18rem;
+    }
+  }
