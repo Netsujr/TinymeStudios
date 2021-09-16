@@ -11,6 +11,10 @@ html {
     font-size: 62.5%;
 }
 
+.container {
+    display: none;
+}
+
 .display .container {
     display: block;
 }
@@ -641,102 +645,98 @@ html {
 
 @media (max-width: 1500px) {
     .about-us-img-wrapper {
-        grid-row: 3/-1;
+      grid-row: 3 / -1;
     }
-
+  
     .card {
-        width: 34rem;
+      width: 34rem;
     }
-
+  
     .contact-wrapper {
-        width: 80%;
-        height: 65rem;
+      width: 80%;
+      height: 65rem;
     }
-
+  
     .footer-content {
-        width: 80%;
+      width: 80%;
     }
-}
-
-@media (max-width: 1400px) {
+  }
+  
+  @media (max-width: 1400px) {
     .banner h1 {
-        font-size: 6rem;
-        line-height: 7rem;
+      font-size: 6rem;
+      line-height: 7rem;
     }
-
+  
     .banner p {
-        font-size: 3rem;
+      font-size: 3rem;
     }
-
+  
     .banner button {
-        width: 20rem;
-        height: 5rem;
-        font-size: 1.6rem;
+      width: 20rem;
+      height: 5rem;
+      font-size: 1.6rem;
     }
-
+  
     .menu-link {
-        font-size: 3rem;
+      font-size: 3rem;
     }
-
+  
     .service:nth-child(1) {
-        grid-column: 3/7;
+      grid-column: 3 / 7;
     }
-    
+  
     .service:nth-child(2) {
-        grid-column: 2 / 6;
-    
+      grid-column: 2 / 6;
     }
-      
+  
     .service:nth-child(3) {
-        grid-column: 3 / 7;
-        
+      grid-column: 3 / 7;
     }
-      
+  
     .service:nth-child(4) {
-        grid-column: 11 / 15;
-    
+      grid-column: 11 / 15;
     }
-      
+  
     .service:nth-child(5) {
-        grid-column: 12 / 16;
-    
+      grid-column: 12 / 16;
     }
-      
+  
     .service:nth-child(6) {
-        grid-column: 11 / 15;
-        
+      grid-column: 11 / 15;
     }
-}
-
-@media (max-width: 1300px) {
+  }
+  
+  @media (max-width: 1300px) {
     .team {
-        padding-bottom: 5rem;
-}
+      padding-bottom: 5rem;
+    }
+  
     .cards-wrapper {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 4rem;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 4rem;
     }
-
+  
     .card {
-        margin-bottom: 8rem;
+      margin-bottom: 8rem;
     }
-
+  
     .contact-wrapper {
-        width: 90%;
-        height: 55rem;
+      width: 90%;
+      height: 55rem;
     }
-
+  
     .contact-heading {
-        margin-bottom: 2rem;
+      margin-bottom: 2rem;
     }
-
+  
     .field {
-        margin: 2rem 0;
+      margin: 2rem 0;
     }
-}
-
-@media (max-width: 1000px) {
+  }
+  
+  @media (max-width: 1000px) {
     .banner h1 {
       font-size: 5rem;
       line-height: 6rem;
@@ -849,4 +849,3 @@ html {
       height: 18rem;
     }
   }
-
