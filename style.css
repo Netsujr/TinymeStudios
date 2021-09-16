@@ -376,7 +376,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 5rem 20rem 5rem;
+    padding: 0 5rem 10rem 5rem;
 }
 
 .cards-wrapper {
@@ -609,7 +609,12 @@ html {
 }
 
 .social-list a {
-    margin: 0.2rem;
+    margin: 2rem;
+}
+
+.social-list i:hover {
+    cursor: pointer;
+    color: teal;
 }
 
 .social-list i {
