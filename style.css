@@ -224,6 +224,8 @@ visibility: hidden;
     position: relative;
     perspective: 100rem;
     overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 .img-wrapper {
@@ -1073,6 +1075,7 @@ visibility: hidden;
 
 .today {
     background-color: teal;
+    border-radius: 45%;
 }
 
 
