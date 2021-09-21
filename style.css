@@ -487,9 +487,9 @@ visibility: hidden;
 }
 
 .about-us-img-wrapper {
-    grid-column: 7/11;
-    grid-row: 3/6;
-    width: 100%;
+    grid-column: 7/10;
+    grid-row: 3/7;
+    width: 130%;
 }
 
 .about-us-img-wrapper img {
