@@ -156,7 +156,7 @@ visibility: hidden;
     transition: right .7s;
 }
 .change .hamburger-menu {
-    right: 33rem;
+    right: 25rem;
 }
 
 .line {
@@ -310,12 +310,12 @@ visibility: hidden;
 }
 
 .sidebar {
-    width: 40rem;
+    width: 30rem;
     height: 100vh;
     position: fixed;
     top: 0;
     right: -40rem;
-    background-color: white;
+    background-color: rgb(236, 236, 236);
     transition: right 0.5s;
     z-index: 100;
 }
@@ -368,7 +368,7 @@ visibility: hidden;
 
 .social-m i {
     font-size: 2.2rem;
-    margin: 3rem;
+    margin: 1rem;
     width: 4.5rem;
     height: 4.5rem;
     background-color: #777;
