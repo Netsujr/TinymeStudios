@@ -1,12 +1,18 @@
+//Code for the loading screen//
+
 window.onload = () => {
   setTimeout(() => {
     document.querySelector("body").classList.add("display");
   }, 1000);
 };
 
+//Code for Hamburger Menu//
+
 document.querySelector(".hamburger-menu").addEventListener("click", () => {
   document.querySelector(".container").classList.toggle("change");
 });
+
+//Code for Scroll button //
 
 document.querySelector('.scroll-btn').addEventListener('click', () => {
   document.querySelector('html').style.scrollBehavior = 'smooth';
@@ -14,6 +20,9 @@ setTimeout(() => {
   document.querySelector('html').style.scrollBehavior = 'unset';
 }, 1000);
 });
+
+
+ //Code for the calendar//
 
 const date = new Date();
 
@@ -97,3 +106,5 @@ document.querySelector(".next").addEventListener("click", () => {
 });
 
 renderCalendar();
+
+
