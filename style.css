@@ -315,7 +315,7 @@ visibility: hidden;
     position: fixed;
     top: 0;
     right: -40rem;
-    background-color: rgb(107, 107, 107);
+    background-color: rgb(216, 216, 216);
     transition: right 0.5s;
     z-index: 100;
 }
