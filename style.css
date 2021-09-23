@@ -9,6 +9,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 
@@ -314,7 +315,7 @@ visibility: hidden;
     height: 100vh;
     position: fixed;
     top: 0;
-    right: -40rem;
+    right: -30rem;
     background-color: rgb(216, 216, 216);
     transition: right 0.5s;
     z-index: 100;
